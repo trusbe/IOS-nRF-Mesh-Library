@@ -76,10 +76,14 @@ class MainNetworkViewController: UIViewController, UICollectionViewDataSource, U
             return true
         }
         if identifier == "ShowNodeConfiguration" {
-            if (self.tabBarController as? MainTabBarViewController)!.targetProxyNode == nil {
-                return false
+            if let meshManager = UIApplication.shared.delegate?.meshManager() {
+                if meshManager.proxyNode() != nil {
+                    return true
+                } else {
+                    return false
+                }
             } else {
-                return true
+                return false
             }
         }
         return false
@@ -95,9 +99,17 @@ class MainNetworkViewController: UIViewController, UICollectionViewDataSource, U
         } else if segue.identifier == "ShowNodeConfiguration" {
             if let nodeEntry = sender as? MeshNodeEntry {
                 if let configView = segue.destination as? NodeModelsTableViewController {
-                    configView.setProxyNode((self.tabBarController as? MainTabBarViewController)!.targetProxyNode!)
-                    configView.setMeshStateManager(meshStateManager)
-                    configView.setNodeEntry(nodeEntry)
+                    if let meshManager = UIApplication.shared.delegate?.meshManager() {
+                        if let proxyNode = meshManager.proxyNode() {
+                            configView.setProxyNode(proxyNode)
+                            configView.setMeshStateManager(meshStateManager)
+                            configView.setNodeEntry(nodeEntry)
+                        } else {
+                            print("No proxy node present!!")
+                        }
+                    } else {
+                        print("No mesh manager present!!")
+                    }
                 }
             }
         }

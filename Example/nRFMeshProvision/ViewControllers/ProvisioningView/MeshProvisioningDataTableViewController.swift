@@ -21,8 +21,9 @@ class MeshProvisioningDataTableViewController: UITableViewController, UITextFiel
     @IBOutlet weak var appKeyCell: UITableViewCell!
 
     // MARK: - Properties
-    var meshStateManager: MeshStateManager!
-    var targetNode: UnprovisionedMeshNode!
+    var meshManager: MeshManager!
+//    var meshStateManager: MeshStateManager!
+//    var targetNode: UnprovisionedMeshNode!
     var centralManager: CBCentralManager!
     var nodeName: String! = "Mesh Node"
     var nodeAddress: Data! = Data([0x00, 0x01])
@@ -32,6 +33,9 @@ class MeshProvisioningDataTableViewController: UITableViewController, UITextFiel
 
     // MARK: - UIViewController implementation
     override func viewWillAppear(_ animated: Bool) {
+        if meshManager == nil {
+            meshManager = UIApplication.shared.delegate?.meshManager()
+        }
         super.viewWillAppear(animated)
         if appKeyName == nil {
             updateProvisioningDataUI()
@@ -45,10 +49,6 @@ class MeshProvisioningDataTableViewController: UITableViewController, UITextFiel
         nodeNameCell.detailTextLabel?.text = nodeName
         //Select first key by default
         didSelectAppKeyWithIndex(0)
-    }
-
-    public func setMeshState(_ aStateManager: MeshStateManager) {
-        meshStateManager = aStateManager
     }
 
     public func setTargetNode(_ aNode: UnprovisionedMeshNode, andCentralManager aCentralManager: CBCentralManager) {

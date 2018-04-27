@@ -35,7 +35,7 @@ class ScannerViewController: UITableViewController, CBCentralManagerDelegate {
         if centralManager.isScanning {
             centralManager.stopScan()
         }
-   scanActivityIndictaor.stopAnimating()
+        scanActivityIndictaor.stopAnimating()
     }
 
     // MARK: - UIViewController Implementation
@@ -53,8 +53,8 @@ class ScannerViewController: UITableViewController, CBCentralManagerDelegate {
             if !centralManager.isScanning {
                 startNodeScan()
             }
+        }
     }
-   }
 
     // MARK: - UITableViewDataSource
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -86,7 +86,7 @@ class ScannerViewController: UITableViewController, CBCentralManagerDelegate {
         if central.state == .poweredOn {
             startNodeScan()
         }
-   }
+    }
 
     func centralManager(_ central: CBCentralManager,
                         didDiscover peripheral: CBPeripheral,
@@ -96,7 +96,7 @@ class ScannerViewController: UITableViewController, CBCentralManagerDelegate {
         guard discoveredNodes.contains(newNode) == false else {
             return
         }
-   discoveredNodes.append(newNode)
+        discoveredNodes.append(newNode)
         tableView.reloadData()
     }
 
@@ -107,6 +107,6 @@ class ScannerViewController: UITableViewController, CBCentralManagerDelegate {
                 configurationView.setMeshState(stateManager)
                 configurationView.setTargetNode(targetNode, andCentralManager: centralManager)
             }
+        }
     }
-   }
 }

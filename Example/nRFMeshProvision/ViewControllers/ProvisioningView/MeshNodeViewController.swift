@@ -23,6 +23,7 @@ ProvisionedMeshNodeDelegate, ProvisionedMeshNodeLoggingDelegate {
     private var targetNode: UnprovisionedMeshNode!
     private var centralManager: CBCentralManager!
     private var logEntries: [LogEntry] = [LogEntry]()
+
     // AppKey Configuration
     private var netKeyIndex: Data!
     private var appKeyIndex: Data!
@@ -212,7 +213,9 @@ ProvisionedMeshNodeDelegate, ProvisionedMeshNodeLoggingDelegate {
 
     func configurationSucceeded() {
         logEventWithMessage("Configuration completed!")
-        (self.navigationController!.viewControllers[0] as? MainTabBarViewController)?.targetProxyNode = targetProvisionedNode
+        if let meshManager = UIApplication.shared.delegate?.meshManager() {
+            meshManager.setProxyNode(targetProvisionedNode)
+        }
         self.navigationController?.popToRootViewController(animated: true)
     }
 
@@ -275,7 +278,6 @@ ProvisionedMeshNodeDelegate, ProvisionedMeshNodeLoggingDelegate {
         targetNode.shouldDisconnect()
         //Now let's switch to a provisioned node object and start configuration
         targetProvisionedNode = ProvisionedMeshNode(withUnprovisionedNode: aNode, andDelegate: self)
-//        targetNode = nil
         destinationAddress = provisioningData.unicastAddr
         centralManager.scanForPeripherals(withServices: [MeshServiceProxyUUID], options: nil)
         logEventWithMessage("Scan started")

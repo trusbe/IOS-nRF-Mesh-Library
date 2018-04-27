@@ -10,12 +10,6 @@ import UIKit
 import nRFMeshProvision
 
 class MainTabBarViewController: UITabBarController {
-    //For a quick demo, this is a quick way to pass around the
-    //Target proxy node.
-    //TODO: This will be added to the library to avoid having the app to decide
-    //What node is the proxy.
-    public var targetProxyNode: ProvisionedMeshNode?
-
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         if let index = tabBar.items?.index(of: item) {
             let targetView = self.viewControllers?[index]

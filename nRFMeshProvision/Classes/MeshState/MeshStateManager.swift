@@ -62,9 +62,9 @@ public class MeshStateManager: NSObject {
                     print(error.localizedDescription)
                     return false
                 }
-       }
+            }
         }
-   return false;
+        return false;
     }
 
     // MARK: - Static accessors
@@ -76,7 +76,9 @@ public class MeshStateManager: NSObject {
         } else {
             return nil
         }
-   }
+        
+    }
+
     public static func stateExists() -> Bool {
         if let documentsPath = MeshStateManager.getDocumentDirectory() {
             let filePath = documentsPath.appending("/meshState.bin")
@@ -84,9 +86,36 @@ public class MeshStateManager: NSObject {
         } else {
             return false
         }
-   }
+    }
+    
+    public static func generateState() -> MeshStateManager {
+        let aStateManager = MeshStateManager()
+        let networkKey = generateNewKey()
+        let keyIndex = Data([0x00, 0x00])
+        let flags = Data([0x00])
+        let ivIndex = Data([0x00, 0x00, 0x00, 0x00])
+        let unicastAddress = Data([0x01, 0x23])
+        let globalTTL: UInt8 = 5
+        let networkName = "My Network"
+        let appKeys = [["AppKey 1": generateNewKey()],
+                       ["AppKey 2": generateNewKey()],
+                       ["AppKey 3": generateNewKey()]]
+        let state = MeshState(withNodeList: [], netKey: networkKey, keyIndex: keyIndex,
+                              IVIndex: ivIndex, globalTTL: globalTTL, unicastAddress: unicastAddress,
+                              flags: flags, appKeys: appKeys, andName: networkName)
+        aStateManager.meshState = state
+        aStateManager.saveState()
+        return aStateManager
+    }
     
     private static func getDocumentDirectory() -> String? {
         return NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
+    }
+    
+    // MARK: - Generation helper
+    static func generateNewKey() -> Data {
+        let helper = OpenSSLHelper()
+        let newKey = helper.generateRandom()
+        return newKey!
     }
 }

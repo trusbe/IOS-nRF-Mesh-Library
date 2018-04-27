@@ -33,6 +33,8 @@
 		30D40F9920849C4A00DC126F /* CompanyIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D40F9820849C4A00DC126F /* CompanyIdentifiers.swift */; };
 		30FF5ED8209314DA002D7C77 /* DefaultTTLGetMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FF5ED7209314DA002D7C77 /* DefaultTTLGetMessage.swift */; };
 		30FF5EDA20931587002D7C77 /* DefaultTTLGetConfiguratorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FF5ED920931587002D7C77 /* DefaultTTLGetConfiguratorState.swift */; };
+		30FF5EDC209349EC002D7C77 /* MeshManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FF5EDB209349EC002D7C77 /* MeshManager.swift */; };
+		30FF5EE0209352FA002D7C77 /* Provisioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FF5EDF209352FA002D7C77 /* Provisioner.swift */; };
 		32F4A650C11D581F50F1C04437EBA6A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93972F6957789C9E8A0EFA25275C82D1 /* Foundation.framework */; };
 		35304939BAC356B98D33C2FD8FF3033B /* LowerTransportPDUParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717AE9407031C7B2A506444276B65C58 /* LowerTransportPDUParams.swift */; };
 		3AE15C3450EEAE497500156AF4B1C428 /* CompositionElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8FB861139283C753A8A8C3E6E3F73 /* CompositionElement.swift */; };
@@ -147,6 +149,8 @@
 		30D40F9820849C4A00DC126F /* CompanyIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyIdentifiers.swift; sourceTree = "<group>"; };
 		30FF5ED7209314DA002D7C77 /* DefaultTTLGetMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTTLGetMessage.swift; sourceTree = "<group>"; };
 		30FF5ED920931587002D7C77 /* DefaultTTLGetConfiguratorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTTLGetConfiguratorState.swift; sourceTree = "<group>"; };
+		30FF5EDB209349EC002D7C77 /* MeshManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshManager.swift; sourceTree = "<group>"; };
+		30FF5EDF209352FA002D7C77 /* Provisioner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provisioner.swift; sourceTree = "<group>"; };
 		318B21D3C09027B98FF8F0C00493237E /* dtls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dtls1.h; path = opensslIncludes/openssl/dtls1.h; sourceTree = "<group>"; };
 		33A14F6D5A6F0C6E186D4171A085D0AC /* Pods-nRFMeshProvision_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-nRFMeshProvision_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		35838742BE205531ABE0B5522DEA4F54 /* AccessMessageParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccessMessageParser.swift; sourceTree = "<group>"; };
@@ -420,6 +424,7 @@
 		4F499F46E6313ED3F1560DEC5AC2FDAA /* Provisioner */ = {
 			isa = PBXGroup;
 			children = (
+				30FF5EDF209352FA002D7C77 /* Provisioner.swift */,
 				F6327BA4741D78D67B4444F1F4081EAF /* ProvisioningData.swift */,
 				CA3F2B10C2E0EAB6F3C6B770CE0431CD /* ProvisioningStateProtocol.swift */,
 				34AB76102C627E23657786E5246E9DDA /* ProvisioningHelpers */,
@@ -700,6 +705,7 @@
 				FF00BBFFFCA60209AB8D72C79E8B8070 /* Transport */,
 				A755E9A6F6938EF248B4010340DDFD30 /* UnprovisionedNode */,
 				3803F20FDC7E75E7B716BD8965193DA5 /* Utils */,
+				30FF5EDB209349EC002D7C77 /* MeshManager.swift */,
 			);
 			name = nRFMeshProvision;
 			path = ../..;
@@ -908,12 +914,14 @@
 				8E9B7087A3E60A98F98A66EEAD6CD7AC /* Data+utils.swift in Sources */,
 				96B5C82098F2F44E90EBF65079989E44 /* DataDistributionProvisioningState.swift in Sources */,
 				CB430BA5A7D1F8C583AF7684D703CA74 /* DiscoveryConfiguratorState.swift in Sources */,
+				30FF5EE0209352FA002D7C77 /* Provisioner.swift in Sources */,
 				CBD8148EB05A095AC11425E6B8C2B74F /* DiscoveryProvisioningState.swift in Sources */,
 				672E29D62D477DB1F8AD4998FC08079A /* InputOutOfBoundActions.swift in Sources */,
 				30FF5ED8209314DA002D7C77 /* DefaultTTLGetMessage.swift in Sources */,
 				75E45EB6C07A700293B2B1AC4F58AE2E /* InviteProvisioningState.swift in Sources */,
 				051D9037C15538F5161DEB38BCDD1977 /* LowerTransportLayer.swift in Sources */,
 				35304939BAC356B98D33C2FD8FF3033B /* LowerTransportPDUParams.swift in Sources */,
+				30FF5EDC209349EC002D7C77 /* MeshManager.swift in Sources */,
 				FA9E707C24B6618EA7A72CABA4AF3CCA /* MeshAddressTypes.swift in Sources */,
 				F46363A91BD70BF751DC704DB371682D /* MeshConstants.swift in Sources */,
 				6EB5F9D28F6F715396A1385A046439F4 /* MeshNodeEntry.swift in Sources */,
