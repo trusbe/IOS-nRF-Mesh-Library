@@ -63,6 +63,21 @@
 		672E29D62D477DB1F8AD4998FC08079A /* InputOutOfBoundActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A1C5B33BE685E87499F918D49D425 /* InputOutOfBoundActions.swift */; };
 		6DF3DB60C076AE5CDE9A7A05B3EAF002 /* ProvisioningErrorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599CFA14710D4B3A8B101BF65A039C2B /* ProvisioningErrorCodes.swift */; };
 		6EB5F9D28F6F715396A1385A046439F4 /* MeshNodeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3831B64D3BFAD6B5641E8EC4C0FBFEB7 /* MeshNodeEntry.swift */; };
+		70C8DD492107724400C841ED /* LightLightnessGetMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C8DD482107724400C841ED /* LightLightnessGetMessage.swift */; };
+		70C8DD4B2107725600C841ED /* LightLightnessSetMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C8DD4A2107725600C841ED /* LightLightnessSetMessage.swift */; };
+		70C8DD4F210772A600C841ED /* LightLightnessStatusMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C8DD4E210772A600C841ED /* LightLightnessStatusMessage.swift */; };
+		70C8DD51210772E300C841ED /* LightLightnessDefaultSetMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C8DD50210772E300C841ED /* LightLightnessDefaultSetMessage.swift */; };
+		70C8DD53210772F800C841ED /* LightLightnessRangeSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C8DD52210772F800C841ED /* LightLightnessRangeSet.swift */; };
+		70C8DD552107733500C841ED /* LightLightnessLinearGetMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C8DD542107733500C841ED /* LightLightnessLinearGetMessage.swift */; };
+		70C8DD572107734A00C841ED /* LightLightnessLinearSetMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C8DD562107734A00C841ED /* LightLightnessLinearSetMessage.swift */; };
+		70C8DD592107736900C841ED /* LightLightnessLinearStatusMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C8DD582107736900C841ED /* LightLightnessLinearStatusMessage.swift */; };
+		70C8DD5B2107738600C841ED /* LightLightnessLastGetMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C8DD5A2107738600C841ED /* LightLightnessLastGetMessage.swift */; };
+		70C8DD5D210773A100C841ED /* LightLightnessLastStatusMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C8DD5C210773A100C841ED /* LightLightnessLastStatusMessage.swift */; };
+		70C8DD5F210773C500C841ED /* LightLightnessDefaultGetMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C8DD5E210773C500C841ED /* LightLightnessDefaultGetMessage.swift */; };
+		70C8DD61210773DA00C841ED /* LightLightnessDefaultStatusMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C8DD60210773DA00C841ED /* LightLightnessDefaultStatusMessage.swift */; };
+		70C8DD63210773F100C841ED /* LightLightnessRangeGetMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C8DD62210773F100C841ED /* LightLightnessRangeGetMessage.swift */; };
+		70C8DD652107740700C841ED /* LightLightnessRangeStatusMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C8DD642107740700C841ED /* LightLightnessRangeStatusMessage.swift */; };
+		70C8DD67210774D700C841ED /* MessageOpcodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C8DD66210774D700C841ED /* MessageOpcodes.swift */; };
 		735C7A2CCD01CA231AA339C5A4B43D49 /* TransportNonce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CFAC2DCB6876C22B96924CE605F694 /* TransportNonce.swift */; };
 		75E45EB6C07A700293B2B1AC4F58AE2E /* InviteProvisioningState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325BD18B72E6A15E96F44BB4F96F909 /* InviteProvisioningState.swift */; };
 		8126969BC47320CBDA7DE5C2C4E949F6 /* ProvisioningAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B253E1B7DDA7D82D04AC6811C937FA /* ProvisioningAlgorithm.swift */; };
@@ -220,6 +235,21 @@
 		6CDA3661F6B832697AD5E475628E7ED0 /* srp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srp.h; path = opensslIncludes/openssl/srp.h; sourceTree = "<group>"; };
 		6E29F8AB41D1E53BE17973FE6239CC5C /* conf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf.h; path = opensslIncludes/openssl/conf.h; sourceTree = "<group>"; };
 		6F6FD7EA1D7BEF8991E495E40A688EB6 /* dso.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dso.h; path = opensslIncludes/openssl/dso.h; sourceTree = "<group>"; };
+		70C8DD482107724400C841ED /* LightLightnessGetMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLightnessGetMessage.swift; sourceTree = "<group>"; };
+		70C8DD4A2107725600C841ED /* LightLightnessSetMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLightnessSetMessage.swift; sourceTree = "<group>"; };
+		70C8DD4E210772A600C841ED /* LightLightnessStatusMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLightnessStatusMessage.swift; sourceTree = "<group>"; };
+		70C8DD50210772E300C841ED /* LightLightnessDefaultSetMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLightnessDefaultSetMessage.swift; sourceTree = "<group>"; };
+		70C8DD52210772F800C841ED /* LightLightnessRangeSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLightnessRangeSet.swift; sourceTree = "<group>"; };
+		70C8DD542107733500C841ED /* LightLightnessLinearGetMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLightnessLinearGetMessage.swift; sourceTree = "<group>"; };
+		70C8DD562107734A00C841ED /* LightLightnessLinearSetMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLightnessLinearSetMessage.swift; sourceTree = "<group>"; };
+		70C8DD582107736900C841ED /* LightLightnessLinearStatusMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLightnessLinearStatusMessage.swift; sourceTree = "<group>"; };
+		70C8DD5A2107738600C841ED /* LightLightnessLastGetMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLightnessLastGetMessage.swift; sourceTree = "<group>"; };
+		70C8DD5C210773A100C841ED /* LightLightnessLastStatusMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLightnessLastStatusMessage.swift; sourceTree = "<group>"; };
+		70C8DD5E210773C500C841ED /* LightLightnessDefaultGetMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLightnessDefaultGetMessage.swift; sourceTree = "<group>"; };
+		70C8DD60210773DA00C841ED /* LightLightnessDefaultStatusMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLightnessDefaultStatusMessage.swift; sourceTree = "<group>"; };
+		70C8DD62210773F100C841ED /* LightLightnessRangeGetMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLightnessRangeGetMessage.swift; sourceTree = "<group>"; };
+		70C8DD642107740700C841ED /* LightLightnessRangeStatusMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLightnessRangeStatusMessage.swift; sourceTree = "<group>"; };
+		70C8DD66210774D700C841ED /* MessageOpcodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageOpcodes.swift; sourceTree = "<group>"; };
 		70E911885A7D59910BF7B3E5945FF14B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		717AE9407031C7B2A506444276B65C58 /* LowerTransportPDUParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LowerTransportPDUParams.swift; sourceTree = "<group>"; };
 		718B086BBBBD8B727C907650CB7F662A /* ui_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui_compat.h; path = opensslIncludes/openssl/ui_compat.h; sourceTree = "<group>"; };
@@ -411,6 +441,20 @@
 				302D1F4F20B6B49E0022AEB1 /* GenericOnOffSetMessage.swift */,
 				302D1F5120B6B4B20022AEB1 /* GenericOnOffSetUnacknowledgedMessage.swift */,
 				302D1F5320B6B4BC0022AEB1 /* GenericOnOffStatusMessage.swift */,
+				70C8DD482107724400C841ED /* LightLightnessGetMessage.swift */,
+				70C8DD4A2107725600C841ED /* LightLightnessSetMessage.swift */,
+				70C8DD4E210772A600C841ED /* LightLightnessStatusMessage.swift */,
+				70C8DD542107733500C841ED /* LightLightnessLinearGetMessage.swift */,
+				70C8DD562107734A00C841ED /* LightLightnessLinearSetMessage.swift */,
+				70C8DD582107736900C841ED /* LightLightnessLinearStatusMessage.swift */,
+				70C8DD5A2107738600C841ED /* LightLightnessLastGetMessage.swift */,
+				70C8DD5C210773A100C841ED /* LightLightnessLastStatusMessage.swift */,
+				70C8DD5E210773C500C841ED /* LightLightnessDefaultGetMessage.swift */,
+				70C8DD60210773DA00C841ED /* LightLightnessDefaultStatusMessage.swift */,
+				70C8DD62210773F100C841ED /* LightLightnessRangeGetMessage.swift */,
+				70C8DD642107740700C841ED /* LightLightnessRangeStatusMessage.swift */,
+				70C8DD50210772E300C841ED /* LightLightnessDefaultSetMessage.swift */,
+				70C8DD52210772F800C841ED /* LightLightnessRangeSet.swift */,
 			);
 			path = ModelMessages;
 			sourceTree = "<group>";
@@ -421,6 +465,7 @@
 				30D40F9820849C4A00DC126F /* CompanyIdentifiers.swift */,
 				30D40F912084876000DC126F /* MeshModelIdentifiers.swift */,
 				30D40F852080DD5500DC126F /* MessageStatusCodes.swift */,
+				70C8DD66210774D700C841ED /* MessageOpcodes.swift */,
 				30D40F882080DDBB00DC126F /* MeshVendorModelIdentifiers.swift */,
 				30D40F892080DDBB00DC126F /* MeshModelIdentifierStringConverter.swift */,
 				30D40F93208487D600DC126F /* MeshVendorModelIdentifierStringConverter.swift */,
@@ -971,22 +1016,29 @@
 				30FF5EDA20931587002D7C77 /* DefaultTTLGetConfiguratorState.swift in Sources */,
 				81971491D4A3F1B9708BA4181710CB07 /* AppKeyAddMessage.swift in Sources */,
 				F04EABF143487B7694AAC802789EFDCA /* AppKeyStatusMessage.swift in Sources */,
+				70C8DD63210773F100C841ED /* LightLightnessRangeGetMessage.swift in Sources */,
 				30D40F862080DD5500DC126F /* MessageStatusCodes.swift in Sources */,
 				30686AF220876EB200DBEEA2 /* ModelPublicationSetConfiguratorState.swift in Sources */,
 				30D40F8A2080DDBB00DC126F /* MeshVendorModelIdentifiers.swift in Sources */,
 				3AE15C3450EEAE497500156AF4B1C428 /* CompositionElement.swift in Sources */,
+				70C8DD5B2107738600C841ED /* LightLightnessLastGetMessage.swift in Sources */,
 				30686AF4208771A600DBEEA2 /* ModelPublicationStatusMessage.swift in Sources */,
+				70C8DD572107734A00C841ED /* LightLightnessLinearSetMessage.swift in Sources */,
+				70C8DD552107733500C841ED /* LightLightnessLinearGetMessage.swift in Sources */,
+				70C8DD4F210772A600C841ED /* LightLightnessStatusMessage.swift in Sources */,
 				CA58D31EE3484FA06BB6B89E46C01C94 /* CompositionGetConfiguratorState.swift in Sources */,
 				CDB6F33819F0034FC46EC16EF2CE291A /* CompositionGetMessage.swift in Sources */,
 				30686AF02087635400DBEEA2 /* ModelPublicationSetMessage.swift in Sources */,
 				30D40F842080D83100DC126F /* ModelAppBindConfiguratorState.swift in Sources */,
 				EF70232229D6D05D7F8B6821D8F9DBDB /* CompositionStatusMessage.swift in Sources */,
+				70C8DD5D210773A100C841ED /* LightLightnessLastStatusMessage.swift in Sources */,
 				301DB1D420A31F350023BCAF /* NRFMeshManager.swift in Sources */,
 				01BEE8B0206D8EC264C627E031B3408D /* ConfiguratorStateProtocol.swift in Sources */,
 				19B7337BA54445F77E2DB29F49F3BF69 /* ConfirmationProvisioningState.swift in Sources */,
 				30FF5EE42096F52D002D7C77 /* ModelSubscriptionAddMessage.swift in Sources */,
 				302D1F5620B6C06F0022AEB1 /* GenericOnOffGetControllerState.swift in Sources */,
 				30D40F922084876100DC126F /* MeshModelIdentifiers.swift in Sources */,
+				70C8DD67210774D700C841ED /* MessageOpcodes.swift in Sources */,
 				302D1F3920AC44AB0022AEB1 /* ModelSubscriptionDeleteMessage.swift in Sources */,
 				B4A59EB76419E07DFB365B0ACB7AAC1B /* ControlMessagePDU.swift in Sources */,
 				8E9B7087A3E60A98F98A66EEAD6CD7AC /* Data+utils.swift in Sources */,
@@ -994,8 +1046,10 @@
 				302D1F5420B6B4BC0022AEB1 /* GenericOnOffStatusMessage.swift in Sources */,
 				30FF5EE8209712B1002D7C77 /* DefaultTTLStatusMessage.swift in Sources */,
 				CB430BA5A7D1F8C583AF7684D703CA74 /* DiscoveryConfiguratorState.swift in Sources */,
+				70C8DD652107740700C841ED /* LightLightnessRangeStatusMessage.swift in Sources */,
 				CBD8148EB05A095AC11425E6B8C2B74F /* DiscoveryProvisioningState.swift in Sources */,
 				672E29D62D477DB1F8AD4998FC08079A /* InputOutOfBoundActions.swift in Sources */,
+				70C8DD4B2107725600C841ED /* LightLightnessSetMessage.swift in Sources */,
 				30FF5ED8209314DA002D7C77 /* DefaultTTLGetMessage.swift in Sources */,
 				75E45EB6C07A700293B2B1AC4F58AE2E /* InviteProvisioningState.swift in Sources */,
 				051D9037C15538F5161DEB38BCDD1977 /* LowerTransportLayer.swift in Sources */,
@@ -1005,6 +1059,7 @@
 				6EB5F9D28F6F715396A1385A046439F4 /* MeshNodeEntry.swift in Sources */,
 				C4B67F4FBACD90E8689C0D561E3600FB /* MeshState.swift in Sources */,
 				D7790354C19754EA0934A9298D1825C7 /* MeshStateManager.swift in Sources */,
+				70C8DD5F210773C500C841ED /* LightLightnessDefaultGetMessage.swift in Sources */,
 				302D1F5820BBE6000022AEB1 /* GenericOnOffSetControllerState.swift in Sources */,
 				10E09790DD07049E8F149DB2A27F46E4 /* NetworkLayer.swift in Sources */,
 				EADB6976846F2FEB0E4B013955B2FE72 /* nRFMeshProvision-dummy.m in Sources */,
@@ -1021,8 +1076,10 @@
 				AA61E415AED0587B01970BF528DAEBD7 /* ProvisioningPDU.swift in Sources */,
 				302D1F3D20AC49510022AEB1 /* ModelSubscriptionDeleteConfiguratorState.swift in Sources */,
 				417DC87F757EDC1180F9860B80F17032 /* ProvisioningStateProtocol.swift in Sources */,
+				70C8DD592107736900C841ED /* LightLightnessLinearStatusMessage.swift in Sources */,
 				F5B38A65A455F97CF90C421760825109 /* PublicKeyInformationAvailability.swift in Sources */,
 				86A6B3491CAA9FE98E5514107E9AF4E3 /* PublicKeyProvisioningState.swift in Sources */,
+				70C8DD61210773DA00C841ED /* LightLightnessDefaultStatusMessage.swift in Sources */,
 				0F8CC9195A481916EFB3721AFECEEDDC /* RandomConfirmationProvisioningState.swift in Sources */,
 				30D40F8D2080DEE600DC126F /* ModelAppBindStatusMessage.swift in Sources */,
 				302D1F4020AEBD0B0022AEB1 /* NodeResetMesage.swift in Sources */,
@@ -1031,11 +1088,14 @@
 				BE888B35900EFE900CE184FAEB574397 /* SetWhiteListConfiguratorState.swift in Sources */,
 				302D1F5220B6B4B20022AEB1 /* GenericOnOffSetUnacknowledgedMessage.swift in Sources */,
 				30D40F9920849C4A00DC126F /* CompanyIdentifiers.swift in Sources */,
+				70C8DD492107724400C841ED /* LightLightnessGetMessage.swift in Sources */,
 				30D40F8B2080DDBB00DC126F /* MeshModelIdentifierStringConverter.swift in Sources */,
 				302D1F4320AEBDFD0022AEB1 /* NodeResetConfiguratorState.swift in Sources */,
 				D050F0B0DE891762C9AB163A35711883 /* SleepConfiguratorState.swift in Sources */,
+				70C8DD51210772E300C841ED /* LightLightnessDefaultSetMessage.swift in Sources */,
 				8DA8A9DF721A479A8A6273BE2E1DDD53 /* StartProvisionProvisioningState.swift in Sources */,
 				9A480C70756E917F38E812CDD89E6186 /* StaticOutOfBoundInformationAvailability.swift in Sources */,
+				70C8DD53210772F800C841ED /* LightLightnessRangeSet.swift in Sources */,
 				735C7A2CCD01CA231AA339C5A4B43D49 /* TransportNonce.swift in Sources */,
 				30D40F94208487D600DC126F /* MeshVendorModelIdentifierStringConverter.swift in Sources */,
 				302D1F4A20B6B3DF0022AEB1 /* GenericModelControllerStateProtocol.swift in Sources */,

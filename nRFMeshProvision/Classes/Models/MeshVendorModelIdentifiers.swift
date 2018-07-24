@@ -12,4 +12,8 @@ public enum MeshVendorModelIdentifiers: UInt32 {
     // NordicSemi Models
     case nordicSimpleOnOffServer = 0x00590000
     case nordicSimpleOnOffClient = 0x00590001
+    
+    // XunTong Custom
+    case xuntongBeaconServer = 0x00591000
+    case xuntongBeaconClient = 0x00591001
 }
